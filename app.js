@@ -3,6 +3,9 @@ let numeroLimite = 40;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 3;
 
+
+exibirMensagemInicial();
+
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
@@ -14,7 +17,7 @@ function exibirMensagemInicial() {
     exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
 }
 
-exibirMensagemInicial();
+
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
